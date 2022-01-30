@@ -1,0 +1,70 @@
+:root {
+	--corPrincipal: rgb(29, 119, 107);
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:wght@400;700&display=swap');
+* {
+	box-sizing: border-box;
+	outline: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--corPrincipal);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	font-size: 1.3em;
+	line-height: 1.5em;
+}
+
+.section {
+	display: grid;
+	max-width: 640px;
+	background-color: white;
+	margin: 100px auto ;
+	padding: 20px;
+	border-radius: 2%;
+}
+.section .tituloform, .section .textoform {
+	text-align: left;
+}
+
+.section .tituloForm{
+	font-size: 40px;
+	margin-bottom: 5px;
+}
+
+.section .vermelho {
+ color: red;
+}
+
+.section .textoForm {
+	font-size: 60px;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.grid-botoes button {
+	height: 40px;
+	min-width: 70px;
+	margin-top: 10px;
+	margin-left: 6px;
+	background-color: white;
+	font-weight: bold;
+	font-size: 20px;
+	color: black;
+	border: none;
+	outline: 3px solid black;
+	box-shadow: 7px 7px 1px black	;
+	transition: all 200ms ease-in-out;
+	padding: 5px;
+}
+
+.grid-botoes button:hover {
+	background-color: var(--corPrincipal);
+	color: white;
+	cursor: pointer;
+}
+.grid-botoes button:active {
+	transform: scale(0.9);
+}
